@@ -1,0 +1,38 @@
+.formContainer {
+  width: 320px;
+  padding: 10px;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 18px;
+}
+
+.formInput {
+
+}
+
+.formError {
+  color: orangered;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.btnWrap {
+  padding: 0 80px;
+}
+
+.formBtn {
+  width: 160px;
+}

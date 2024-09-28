@@ -1,0 +1,25 @@
+.contactContainer {
+  width: 320px;
+  height: 80px;
+  padding: 10px;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactWraper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contactWraper:first-child {
+  margin-bottom: 10px;
+}
+
+.contactBtn {
+}
