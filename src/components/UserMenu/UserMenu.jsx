@@ -11,7 +11,6 @@ export default function UserMenu() {
     <div className={css.wrapper}>
       <p className={css.text}>Welcome, {user.name}</p>
       <button
-        className={css.btn}
         onClick={() => dispatch(logOut())}
         type="button"
       >

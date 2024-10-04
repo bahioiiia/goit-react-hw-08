@@ -1,8 +1,6 @@
-.list {
-  list-style: none;
+.contactsContainer {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  list-style: none;
   gap: 10px;
-  padding: 0;
 }
