@@ -1,5 +1,4 @@
-import { MdPerson } from "react-icons/md";
-import { FaPhone } from "react-icons/fa";
+import { IoPerson, IoCallSharp } from "react-icons/io5";
 import css from "./Contact.module.css";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contacts/operations";
@@ -9,23 +8,20 @@ export default function Contact({ contact }) {
   const handleDelete = () => dispatch(deleteContact(contact.id));
 
   return (
-    <div className={css.card}>
-      <div className={css.cardItem}>
-        <p className={css.text}>
-          <MdPerson className={css.icon} size="26" />
+    <div className={css.contactContainer}>
+      <ul>
+        <li className={css.contactWraper}>
+          <IoPerson />
           {contact.name}
-        </p>
-
-        <p className={css.text}>
-          <FaPhone className={css.icon} size="20" />
+        </li>
+        <li className={css.contactWraper}>
+          <IoCallSharp />
           {contact.number}
-        </p>
-      </div>
-      <div className={css.cardItem}>
-        <button className={css.button} onClick={handleDelete}>
-          Delete
-        </button>
-      </div>
+        </li>
+      </ul>
+      <button className={css.contactBtn} onClick={handleDelete}>
+        Delete
+      </button>
     </div>
   );
 }

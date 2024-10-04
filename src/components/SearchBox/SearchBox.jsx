@@ -12,9 +12,15 @@ export default function SearchBox() {
   }
 
   return (
-    <div className={css.search}>
+    <div className={css.container}>
       <label htmlFor="name">Find contacts by name</label>
-      <input value={filter} onChange={handleChange} type="text" id="name" />
+      <input
+        className={css.searchInput}
+        value={filter}
+        onChange={handleChange}
+        type="text"
+        id="name"
+      />
     </div>
   );
 }
