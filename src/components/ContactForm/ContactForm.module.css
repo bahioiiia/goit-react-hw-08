@@ -1,36 +1,27 @@
-.formContainer {
-  width: 320px;
-  padding: 10px;
-  border: 2px solid currentColor;
-  border-radius: 4px;
+.form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 10px;
-  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
-.formWrap {
+.input {
+  font: inherit;
+}
+
+.formItem {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-label {
-  font-size: 18px;
-}
-
-.formInput {}
-
-.formError {
-  color: orangered;
-  margin-bottom: 16px;
+.error {
+  color: red;
   font-size: 14px;
 }
 
-.btnWrap {
-  padding: 0 80px;
-}
-
-.formBtn {
-  width: 160px;
+.button {
+  border: solid 2px gray;
 }

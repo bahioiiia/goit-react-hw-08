@@ -13,6 +13,15 @@ const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
 const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 const TasksPage = lazy(() => import('../pages/TasksPage/TasksPage'));
 
+/* const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
+const ContactsPage = lazy(() =>
+  import("../pages/ContactsPage/ContactsPage")
+);
+const LoginPage = lazy(() => import("../pages/LoginPage/LoginPage"));
+const RegistrationPage = lazy(() =>
+  import("../pages/RegistrationPage/RegistrationPage")
+);
+ */
 export default function App() {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectIsRefreshing);

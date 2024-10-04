@@ -21,16 +21,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-a:active {
-  color: orangered;
-}
-
-header a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px;
-  font-weight: 700;
-}
 
 ul {
   padding: 0;
@@ -39,9 +29,9 @@ ul {
 body {
   margin: 0;
   display: flex;
+  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  margin: 10px;
 }
 
 h1 {

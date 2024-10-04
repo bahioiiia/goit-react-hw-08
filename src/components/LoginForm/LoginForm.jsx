@@ -12,15 +12,15 @@ export default function LoginForm() {
   };
   return (
     <Formik initialValues={{ email: "", password: "" }} onSubmit={handleSubmit}>
-      <Form className={css.formContainer}>
-        <div className={css.formWrap}>
-          <label className={css.label}>Email</label>
+      <Form>
+        <label className={css.label}>
+          Email
           <Field name="email" type="email" className={css.input} />
-        </div>    
-        <div className={css.formWrap}>
-          <label className={css.label}>Password</label>
+        </label>
+        <label className={css.label}>
+          Password
           <Field name="password" type="password" className={css.input} />
-        </div>
+        </label>
 
         <button className={css.btn} type="submit">
           Log In

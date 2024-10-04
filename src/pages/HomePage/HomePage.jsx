@@ -1,13 +1,17 @@
 import DocumentTitle from '../../components/DocumentTitle';
 
 const styles = {
-/*   container: {
+  container: {
     minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-  }, */
-
+  },
+  title: {
+    fontWeight: 500,
+    fontSize: 48,
+    textAlign: 'center',
+  },
 };
 
 export default function HomePage() {
@@ -15,8 +19,8 @@ export default function HomePage() {
     <>
       <DocumentTitle>Home</DocumentTitle>
 
-      <div /* style={styles.container} */>
-        <h1>
+      <div style={styles.container}>
+        <h1 style={styles.title}>
           Welcome page{' '}
           <span role="img" aria-label="Greeting icon">
             💁‍♀️
